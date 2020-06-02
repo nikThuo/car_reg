@@ -25,7 +25,7 @@ SECRET_KEY = 'ef19emd$@&2(96@l&z$n(ltusa8)n5oucnyhk^t+&rrjrc!@(6'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['13.58.126.42', 'localhost']
 
 
 # Application definition
@@ -84,7 +84,7 @@ DATABASES = {
         'NAME': 'new_careg',
         'USER': 'root',
         'PASSWORD': 'toor',
-        'HOST': 'localhost',
+        'HOST': '13.58.126.42',
         'PORT': '3306',
     }
 }
