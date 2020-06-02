@@ -1,21 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d79d4450-5387-4a54-9ed5-4215626eff24" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/car_reg.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/car_reg.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/car_reg/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/car_reg/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/car_reg/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/car_reg/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/general/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/general/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/car_reg/sign_up.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/car_reg/sign_up.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/car_reg/vehicle_registration_details.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/car_reg/vehicle_registration_details.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/car_reg/vehicle_transfer_confirmation_status_view.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/car_reg/vehicle_transfer_confirmation_status_view.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/car_reg/vehicle_transfer_owner_view.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/car_reg/vehicle_transfer_owner_view.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle_registration/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle_registration/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle_transfer/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle_transfer/models.py" afterDir="false" />
-    </list>
+    <list default="true" id="d79d4450-5387-4a54-9ed5-4215626eff24" name="Default" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -167,7 +153,7 @@
       <updated>1522221878775</updated>
       <workItem from="1590613663739" duration="21902000" />
       <workItem from="1591028832592" duration="13460000" />
-      <workItem from="1591116529375" duration="59000" />
+      <workItem from="1591116529375" duration="418000" />
     </task>
     <servers />
   </component>
@@ -184,6 +170,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="481" y="129" key="MultipleFileMergeDialog" timestamp="1591116915779">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="481" y="129" key="MultipleFileMergeDialog/0.0.1536.824@0.0.1536.824" timestamp="1591116915779" />
     <state x="277" y="56" key="SettingsEditor" timestamp="1590613876520">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
