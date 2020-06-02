@@ -54,16 +54,13 @@ def allUsers(request):
 @renderer_classes((JSONRenderer,))
 def addUsers(request):
     users_add = Users(fullname=request.data['name'], gender=request.data['gender'], dob=request.data['dob'],
-                      occupation=request.data['occupation'],
                       mobile=request.data['mobile'], email=request.data['email'], pin=request.data['pin'],
-                      national_id=request.data['national'], nationality=request.data['nationality'],
-                      physical_address=request.data['address'],
-                      box=request.data['box'], code=request.data['code'], town=request.data['town'],
-                      password=request.data['password'], user_type=request.data['user_type'])
+                      national_id=request.data['national'], password=request.data['password'], user_type=request.data['user_type'])
 
     if users_add:
         users_add.save()
-        return Response(status=status.HTTP_201_CREATED)
+        # return Response(status=status.HTTP_201_CREATED)
+        return render(request, template_name='car_reg/sign_in.html')
     return Response(status=status.HTTP_400_BAD_REQUEST)
 
 
@@ -79,24 +76,12 @@ def editUsers(request):
         users_edit.gender = request.data['gender']
     if 'dob' in request.data:
         users_edit.dob = request.data['dob']
-    if 'occupation' in request.data:
-        users_edit.occupation = request.data['occupation']
     if 'mobile' in request.data:
         users_edit.mobile = request.data['mobile']
     if 'email' in request.data:
         users_edit.email = request.data['email']
     if 'pin' in request.data:
         users_edit.pin = request.data['pin']
-    if 'nationality' in request.data:
-        users_edit.nationality = request.data['nationality']
-    if 'address' in request.data:
-        users_edit.physical_address = request.data['address']
-    if 'box' in request.data:
-        users_edit.box = request.data['box']
-    if 'code' in request.data:
-        users_edit.code = request.data['code']
-    if 'town' in request.data:
-        users_edit.town = request.data['town']
     if 'password' in request.data:
         users_edit.password = request.data['password']
 

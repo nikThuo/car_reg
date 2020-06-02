@@ -21,7 +21,7 @@ from vehicle_registration.views import index, addCarRegistrationView, carRegistr
     carTransfer, carTransferConfirmation, addCarDetails
 from vehicle_transfer.views import carOwner, carOwnerView
 from vehicle_transfer_confirmation.views import carConfirmation, carConfirmationView
-from general.views import participants, assets, ledger
+from general.views import participants, assets, transactions, ledger, user_vehicles, user_vehicle_history
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
@@ -48,7 +48,10 @@ urlpatterns = [
     url(r'^vehicle_confirmation/(?P<user>[^/]+)/$', carConfirmation, name='vehicle_confirmation'),
     url(r'^vehicle_confirmation_details/(?P<transfer>[^/]+)/$', carConfirmationView, name='vehicle_confirmation_details'),
 
-    url(r'^participants$', participants, name='participants$'),
-    url(r'^assets$', assets, name='assets$'),
+    url(r'^ledger/participants$', participants, name='participants$'),
+    url(r'^ledger/assets$', assets, name='assets$'),
+    url(r'^ledger/transactions$', transactions, name='transactions$'),
     url(r'^ledger$', ledger, name='ledger$'),
+    url(r'^users/user_vehicles$', user_vehicles, name='user_vehicles'),
+    url(r'^users/user_vehicle_history$', user_vehicle_history, name='users_vehicle_history'),
 ]

@@ -115,11 +115,6 @@
                                         <label for="dob">Date of Birth</label>
                                     </div>
                                     <div class="input-field col m6 s12">
-                                        <input id="occupation" type="text" name="occupation" class="validate"
-                                               required>
-                                        <label for="occupation">Occupation</label>
-                                    </div>
-                                    <div class="input-field col m6 s12">
                                         <input id="mobile" type="text" name="mobile" class="validate" required>
                                         <label for="mobile">Mobile</label>
                                     </div>
@@ -138,51 +133,33 @@
                                         <label for="national">ID Number</label>
                                     </div>
                                     <div class="input-field col m6 s12">
-                                        <input id="nationality" type="text" name="nationality" class="validate"
-                                               required>
-                                        <label for="nationality">Nationality</label>
-                                    </div>
-                                    <div class="input-field col m6 s12">
-                                        <input id="address" type="text" name="address" class="validate" required>
-                                        <label for="address">Physical Address</label>
-                                    </div>
-                                    <div class="input-field col m6 s12">
-                                        <input id="box" type="text" name="box" class="validate" required>
-                                        <label for="box">Box Number</label>
-                                    </div>
-                                    <div class="input-field col m6 s12">
-                                        <input id="code" type="text" name="code" class="validate" required>
-                                        <label for="code">Postal Code</label>
-                                    </div>
-                                    <div class="input-field col m6 s12">
-                                        <input id="town" type="text" name="town" class="validate" required>
-                                        <label for="town">Town</label>
-                                    </div>
-                                    <div class="input-field col m6 s12">
                                         <input id="password" type="password" name="password" class="validate" required>
-                                        <button onclick="if (password.type == 'text') password.type = 'password';else password.type = 'text';">
-                                            show
-                                        </button>
+{#                                        <button onclick="if (password.type == 'text') password.type = 'password';else password.type = 'text';">#}
+{#                                            show#}
+{#                                        </button>#}
                                         <label for="password">Password</label>
                                     </div>
+                                    <div class="input-field col m6 s12">
+                                        <input id="confirmpassword" type="password" name="confirmpassword" class="validate" required>
+                                        <label for="confirmpassword">Confirm Password</label>
+                                    </div>
                                     <div class="col s12 right-align">
-                                        {% comment %}<a href="/signin"
-                                                        class="btn maroon waves-effect waves-light m-b-xs">Sign Up</a>
+                                        {% comment %}<a href="/signin" class="btn maroon waves-effect waves-light m-b-xs">Sign Up</a>
                                         {% endcomment %}
                                         {# <a href="/" class="white waves-effect waves-light btn m-b-xs">Sign Up</a>#}
-                                        <button class="btn maroon waves-effect waves-light m-b-xs" type="submit"
+                                        <button class="btn maroon waves-effect waves-light m-b-xs" type="submit" id="submit"
                                                 name="signin">Sign Up
                                         </button>
                                     </div>
                                     <div class="col s12 left-align">
                                         <a href="/home" class="waves-red">Sign In</a>
                                     </div>
-                                    {#
-                                    <div class="col s12 left-align">#}
+
+                                    <div class="col s12 left-align">
                                         {# <a href="forgot.html" class="waves-red">Forgot Password?</a>#}
-                                        {#
+
                                     </div>
-                                    #}
+
                                 </form>
                             </div>
                         </div>
@@ -204,6 +181,16 @@
     <!--
     // Form validation code will come here.
 
+    $("#submit").click(function () {
+            var password = $("#password").val();
+            var confirmPassword = $("#confirmpassword").val();
+            if (password != confirmPassword) {
+                alert("Passwords do not match.");
+                return false;
+            }
+            return true;
+        });
+
     $(document).ready(function () {
 
     });
@@ -219,7 +206,7 @@
         closeOnSelect: false, // Close upon selecting a date,
         container: undefined,// ex. 'body' will append picker to body
         format: 'yyyy-mm-dd',
-        max: new Date(2000, 5, 19)
+        max: new Date(2002, 6, 8)
     });
 
     function validate() {
