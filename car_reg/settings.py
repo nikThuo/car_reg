@@ -25,7 +25,11 @@ SECRET_KEY = 'ef19emd$@&2(96@l&z$n(ltusa8)n5oucnyhk^t+&rrjrc!@(6'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+<<<<<<< Updated upstream
 ALLOWED_HOSTS = []
+=======
+ALLOWED_HOSTS = ['*']
+>>>>>>> Stashed changes
 
 
 # Application definition
@@ -84,7 +88,11 @@ DATABASES = {
         'NAME': 'new_careg',
         'USER': 'root',
         'PASSWORD': '',
+<<<<<<< Updated upstream
         'HOST': 'localhost',
+=======
+        'HOST': '127.0.0.1',
+>>>>>>> Stashed changes
         'PORT': '3306',
     }
 }
